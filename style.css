@@ -1,0 +1,50 @@
+body {margin: 0;
+    color:white;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    letter-spacing: 6px; /*Controls the spacing between the letters*/
+
+    text-align: center;
+}
+
+#header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/4319752/pexels-photo-4319752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+    background-repeat: no-repeat; /*Do not let the background repeat itself*/
+
+    background-size: 100%; /*Make the image cover the whole space*/
+
+    background-position: 0% 60%; /*Centers the image in the center*/
+
+    min-height: 40vh; /*Specifies the minimum height relative to the user's screen size*/
+
+    margin-bottom: 10vh;
+
+    position: relative; /*Children of this container will now be able to position themselves anywhere inside this container*/
+}
+
+#header-section-content {
+    position: absolute; /*Lets you manipulate left, right, top, and bottom*/
+
+    bottom: 45%;
+
+    /*Horizontally center*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#photo-section {
+    text-align: center;
+}
+
+#photo-section img {
+    max-width: 33vw;
+    vertical-align: middle;
+    margin-bottom: 3vh;
+}
